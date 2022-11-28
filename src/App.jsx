@@ -7,7 +7,14 @@ import * as Components from "./components/indexComponents";
 
 function App() {
   return (
-    <div className="App h-auto vw-100">
+    <div
+      className="App h-auto vw-100"
+      style={{
+        display: "grid",
+        alignContent: "space-between",
+        minHeight: "100vh",
+      }}
+    >
       <div className={"w-100 h-auto"}>
         <BrowserRouter>
           <Header />
@@ -32,7 +39,7 @@ function App() {
 
             <Route exact path="/gallery" element={<Components.Gallery />} />
 
-            <Route exact path="/demos" element={<Components.Albums />} />
+            <Route exact path="/albums" element={<Components.Albums />} />
 
             <Route exact path="*" element={<Components.Error404 />} />
           </Routes>

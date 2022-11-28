@@ -30,6 +30,7 @@ export const Header = () => {
                 {({ isActive }) => (
                   <a
                     className={isActive ? "nav-link active" : "nav-link active"}
+                    style={{ color: "#e3ff00" }}
                   >
                     Home
                   </a>
@@ -40,7 +41,12 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to={`/albums`}>
                 {({ isActive }) => (
-                  <a className={isActive ? "nav-link" : "nav-link"}>Albums</a>
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Albums
+                  </a>
                 )}
               </NavLink>
             </li>
@@ -48,7 +54,12 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to={`/tours`}>
                 {({ isActive }) => (
-                  <a className={isActive ? "nav-link" : "nav-link"}>Tours</a>
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Tours
+                  </a>
                 )}
               </NavLink>
             </li>
@@ -56,7 +67,12 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to={`/news`}>
                 {({ isActive }) => (
-                  <a className={isActive ? "nav-link" : "nav-link"}>News</a>
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    News
+                  </a>
                 )}
               </NavLink>
             </li>
@@ -64,7 +80,12 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to={`/about`}>
                 {({ isActive }) => (
-                  <a className={isActive ? "nav-link" : "nav-link"}>About</a>
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    About
+                  </a>
                 )}
               </NavLink>
             </li>
@@ -72,7 +93,12 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to={`/contact`}>
                 {({ isActive }) => (
-                  <a className={isActive ? "nav-link" : "nav-link"}>Contact</a>
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Contact
+                  </a>
                 )}
               </NavLink>
             </li>

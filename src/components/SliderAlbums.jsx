@@ -2,6 +2,7 @@ import React from "react";
 import imageDrum from "../img/Albums/drum.jpg";
 import imageMicro from "../img/Albums/micro.jpg";
 import imageElectronic from "../img/Albums/electronic.jpg";
+import { NavLink } from "react-router-dom";
 
 export const SliderAlbums = () => {
   return (
@@ -9,6 +10,7 @@ export const SliderAlbums = () => {
       id="carouselExampleDark"
       className="carousel carousel-dark slide"
       data-bs-ride="carousel"
+      style={{ maxWidth: "100vw", height: "50%" }}
     >
       <div className="carousel-indicators">
         <button
@@ -34,24 +36,61 @@ export const SliderAlbums = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
-          <img src={imageDrum} className="d-block w-100" alt="Drum" />
+          <NavLink to={`#`}>
+            {({ isActive }) => (
+              <a
+                className={isActive ? "nav-link" : "nav-link"}
+                style={{ color: "#e3ff00" }}
+              >
+                <img src={imageDrum} className="d-block w-100" alt="Drum" />
+              </a>
+            )}
+          </NavLink>
+
           <div className="carousel-caption d-none d-md-block">
-            <h5 style={{color: "#6610f2"}}>Album1 </h5> 
-            <p>Some representative placeholder content for the first slide.</p>
+            <label style={{ color: "#e3ff00" }}>
+              Some representative placeholder content for the first slide.
+            </label>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src={imageElectronic} className="d-block w-100" alt="Electronic" />
+          <NavLink to={`#`}>
+            {({ isActive }) => (
+              <a
+                className={isActive ? "nav-link" : "nav-link"}
+                style={{ color: "#e3ff00" }}
+              >
+                <img
+                  src={imageElectronic}
+                  className="d-block w-100"
+                  alt="Electronic"
+                />
+              </a>
+            )}
+          </NavLink>
           <div className="carousel-caption d-none d-md-block">
-            <h5 style={{color: "#6610f2"}}>Album 2</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h3>
+              <span className="badge bg-dark" style={{ color: "#e3ff00" }}>
+                Album 2
+              </span>
+            </h3>
           </div>
         </div>
+
         <div className="carousel-item">
-          <img src={imageMicro} className="d-block w-100" alt="Micro" />
+          <NavLink to={`#`}>
+            {({ isActive }) => (
+              <a
+                className={isActive ? "nav-link" : "nav-link"}
+                style={{ color: "#e3ff00" }}
+              >
+                <img src={imageMicro} className="d-block w-100" alt="Micro" />
+              </a>
+            )}
+          </NavLink>
+
           <div className="carousel-caption d-none d-md-block">
-            <h5 style={{color: "#6610f2"}}>Album 3</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
       </div>
