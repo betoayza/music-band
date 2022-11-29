@@ -65,6 +65,19 @@ export const Header = () => {
             </li>
 
             <li className="nav-item">
+              <NavLink to={`/gallery`}>
+                {({ isActive }) => (
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Gallery
+                  </a>
+                )}
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
               <NavLink to={`/news`}>
                 {({ isActive }) => (
                   <a
@@ -72,6 +85,19 @@ export const Header = () => {
                     style={{ color: "#e3ff00" }}
                   >
                     News
+                  </a>
+                )}
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to={`/store`}>
+                {({ isActive }) => (
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Store
                   </a>
                 )}
               </NavLink>
@@ -98,6 +124,32 @@ export const Header = () => {
                     style={{ color: "#e3ff00" }}
                   >
                     Contact
+                  </a>
+                )}
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to={`/login`}>
+                {({ isActive }) => (
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Login
+                  </a>
+                )}
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to={`/signup`}>
+                {({ isActive }) => (
+                  <a
+                    className={isActive ? "nav-link" : "nav-link"}
+                    style={{ color: "#e3ff00" }}
+                  >
+                    Sign Up
                   </a>
                 )}
               </NavLink>

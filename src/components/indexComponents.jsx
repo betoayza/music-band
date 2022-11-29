@@ -8,6 +8,9 @@ import { Tours } from "./Tours";
 import { Gallery } from "./Gallery";
 import { Error404 } from "./Error404";
 import { Demos } from "./Demos";
+import SignUp from "./SignUp";
+import Login from "./Login";
+
 
 export {
   Home,
@@ -20,4 +23,6 @@ export {
   Gallery,
   Error404,
   Demos,
+  SignUp,
+  Login
 };

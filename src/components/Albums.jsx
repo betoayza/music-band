@@ -6,6 +6,7 @@ import imageElectronic from "../img/Albums/electronic.jpg";
 export const Albums = () => {
   return (
     <div className={"w-100 container"}>
+      <h1>Albums</h1>
       <div className={"row row-cols-auto"}>
         <div className={""}>
           <figure>
