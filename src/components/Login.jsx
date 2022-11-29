@@ -26,40 +26,40 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const options = {
-      url: `${API}/login`,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "*",
-        Accept: "application/json",
-      },
-      params: form,
-      timeout: 3000,
-    };
-    console.log(form);
-    await axios
-      .request(options)
-      .then((res) => {
-        console.log(res.data);
-        if (res.data) {
-          //case generic user
-          if (res.data.type === "Estandar") {
-            const code = res.data.code;
-            const username = res.data.username;
-            navigate(`/user/${username}/${code}`);
-            //case admin
-          } else {
-            navigate("/admin");
-          }
-        } else {
-          setIsError(true);
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // e.preventDefault();
+    // const options = {
+    //   url: `${API}/login`,
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "Access-Control-Allow-Origin": "*",
+    //     "Access-Control-Allow-Headers": "*",
+    //     Accept: "application/json",
+    //   },
+    //   params: form,
+    //   timeout: 3000,
+    // };
+    // console.log(form);
+    // await axios
+    //   .request(options)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //     if (res.data) {
+    //       //case generic user
+    //       if (res.data.type === "Estandar") {
+    //         const code = res.data.code;
+    //         const username = res.data.username;
+    //         navigate(`/user/${username}/${code}`);
+    //         //case admin
+    //       } else {
+    //         navigate("/admin");
+    //       }
+    //     } else {
+    //       setIsError(true);
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
     handleClean();
   };
 

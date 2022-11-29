@@ -23,42 +23,42 @@ const SignUp = () => {
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
-    const options = {
-      url: `${API}/signup`,
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "*",
-        Accept: "application/json",
-      },
-      data: form,
-      timeout: 3000,
-    };
-    console.log(form);
+    // const options = {
+    //   url: `${API}/signup`,
+    //   method: "post",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "Access-Control-Allow-Origin": "*",
+    //     "Access-Control-Allow-Headers": "*",
+    //     Accept: "application/json",
+    //   },
+    //   data: form,
+    //   timeout: 3000,
+    // };
+    // console.log(form);
 
-    await axios
-      .request(options)
-      .then((res) => {
-        console.log(res.data);
-        setModal(true);
-        if (res.data) {
-          if (res.data && res.data.type === "Admin") {
-            setNewUser("Admin");
-            setIsSuccessful(true);
-          } else {
-            if (res.data && res.data.type === "Estandar") {
-              setNewUser(res.data.username);
-              setIsSuccessful(true);
-            }
-          }
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // await axios
+    //   .request(options)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //     setModal(true);
+    //     if (res.data) {
+    //       if (res.data && res.data.type === "Admin") {
+    //         setNewUser("Admin");
+    //         setIsSuccessful(true);
+    //       } else {
+    //         if (res.data && res.data.type === "Estandar") {
+    //           setNewUser(res.data.username);
+    //           setIsSuccessful(true);
+    //         }
+    //       }
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
     handleClean();
   };
 
