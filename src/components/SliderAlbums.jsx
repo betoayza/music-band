@@ -36,7 +36,7 @@ export const SliderAlbums = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
-          <NavLink to={`#`}>
+          <NavLink to={`/albums`}>
             {({ isActive }) => (
               <a
                 className={isActive ? "nav-link" : "nav-link"}
@@ -48,13 +48,15 @@ export const SliderAlbums = () => {
           </NavLink>
 
           <div className="carousel-caption d-none d-md-block">
-            <label style={{ color: "#e3ff00" }}>
-              Some representative placeholder content for the first slide.
-            </label>
+            <h3>
+              <span className="badge bg-dark" style={{ color: "#e3ff00" }}>
+                Album 1
+              </span>
+            </h3>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <NavLink to={`#`}>
+          <NavLink to={`/albums`}>
             {({ isActive }) => (
               <a
                 className={isActive ? "nav-link" : "nav-link"}
@@ -78,7 +80,7 @@ export const SliderAlbums = () => {
         </div>
 
         <div className="carousel-item">
-          <NavLink to={`#`}>
+          <NavLink to={`/albums`}>
             {({ isActive }) => (
               <a
                 className={isActive ? "nav-link" : "nav-link"}
@@ -90,7 +92,11 @@ export const SliderAlbums = () => {
           </NavLink>
 
           <div className="carousel-caption d-none d-md-block">
-            <p>Some representative placeholder content for the first slide.</p>
+            <h3>
+              <span className="badge bg-dark" style={{ color: "#e3ff00" }}>
+                Album 3
+              </span>
+            </h3>
           </div>
         </div>
       </div>

@@ -85,7 +85,9 @@ const Login = () => {
       <div
         className={"w-50 d-grid justify-content-center text-center container"}
       >
-        <h2 className={"text-center"} style={{ color: "#6610f2" }}>Login</h2>
+        <h2 className={"text-center"} style={{ color: "#6610f2" }}>
+          Login
+        </h2>
 
         <div className={"w-100 justify-content-md-center"}>
           <form onSubmit={handleSubmit} className={"container"}>
@@ -109,7 +111,7 @@ const Login = () => {
               required
             />
 
-            <div className={"d-flex m-1"}>
+            <div className={"d-flex justify-content-center m-1"}>
               <button type="submit" className="btn btn-primary">
                 Go
               </button>

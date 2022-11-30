@@ -106,7 +106,9 @@ const SignUp = () => {
       style={{ display: "grid", placeItems: "center" }}
     >
       <div className="form-group">
-        <h2 className={"text-center"} style={{ color: "#6610f2" }}>Sign Up</h2>
+        <h2 className={"text-center"} style={{ color: "#6610f2" }}>
+          Sign Up
+        </h2>
         <form onSubmit={handleSubmit} className={"container"}>
           <input
             type="hidden"
@@ -159,7 +161,7 @@ const SignUp = () => {
             value={form.status}
           />
 
-          <div className="m-1">
+          <div className="m-1 d-flex justify-content-center">
             <button type="submit" className="btn btn-primary">
               Send
             </button>
