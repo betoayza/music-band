@@ -5,15 +5,17 @@ import concertImage from "../img/concert.jpg";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="container">
       {/* <SliderPresentation /> */}
       <img
         src={concertImage}
-        className={"img-fluid"}
+        className={"img-fluid img-thumbnail"}
         alt="Concert"
         // style={{ maxHeight: "500px", maxWidth: "100vw", height: "500px" }}
       />
-      <SliderAlbums />
+      <div className={"container p-2"}>
+        <SliderAlbums />
+      </div>
     </div>
   );
 };

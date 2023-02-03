@@ -1,5 +1,4 @@
 import React from "react";
-// import "bootstrap-icons/font/bootstrap-icons.css";
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
@@ -156,35 +155,35 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-      </div>
 
-      <div style={{ display: "flex", justifyItems: "center" }}>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <i
-              className="bi-twitter"
-              style={{ color: "white", fontSize: "20px" }}
-            ></i>
-          </a>
-        </li>
+        <div style={{ display: "flex", justifyItems: "center" }}>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i
+                className="bi-twitter"
+                style={{ color: "white", fontSize: "20px" }}
+              ></i>
+            </a>
+          </li>
 
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <i
-              className="bi-facebook"
-              style={{ color: "white", fontSize: "20px" }}
-            ></i>
-          </a>
-        </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i
+                className="bi-facebook"
+                style={{ color: "white", fontSize: "20px" }}
+              ></i>
+            </a>
+          </li>
 
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <i
-              className="bi-instagram"
-              style={{ color: "white", fontSize: "20px" }}
-            ></i>
-          </a>
-        </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i
+                className="bi-instagram"
+                style={{ color: "white", fontSize: "20px" }}
+              ></i>
+            </a>
+          </li>
+        </div>
       </div>
     </nav>
   );

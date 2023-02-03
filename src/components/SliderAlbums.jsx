@@ -42,7 +42,7 @@ export const SliderAlbums = () => {
                 className={isActive ? "nav-link" : "nav-link"}
                 style={{ color: "#e3ff00" }}
               >
-                <img src={imageDrum} className="d-block w-100" alt="Drum" />
+                <img src={imageDrum} className="d-block w-100 rounded" alt="Drum" />
               </a>
             )}
           </NavLink>
@@ -64,7 +64,7 @@ export const SliderAlbums = () => {
               >
                 <img
                   src={imageElectronic}
-                  className="d-block w-100"
+                  className="d-block w-100 rounded"
                   alt="Electronic"
                 />
               </a>
@@ -86,7 +86,7 @@ export const SliderAlbums = () => {
                 className={isActive ? "nav-link" : "nav-link"}
                 style={{ color: "#e3ff00" }}
               >
-                <img src={imageMicro} className="d-block w-100" alt="Micro" />
+                <img src={imageMicro} className="d-block w-100 rounded" alt="Micro" />
               </a>
             )}
           </NavLink>
