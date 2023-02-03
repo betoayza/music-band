@@ -5,8 +5,8 @@ import concertImage from "../img/concert.jpg";
 
 export const Home = () => {
   return (
-    <div className="container">
-      {/* <SliderPresentation /> */}
+    <div className="container text-center">
+      <h1 style={{ color: "white" }}>The Band</h1>
       <img
         src={concertImage}
         className={"img-fluid img-thumbnail"}

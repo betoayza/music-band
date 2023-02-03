@@ -156,33 +156,33 @@ export const Header = () => {
           </ul>
         </div>
 
-        <div style={{ display: "flex", justifyItems: "center" }}>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              <i
-                className="bi-twitter"
-                style={{ color: "white", fontSize: "20px" }}
-              ></i>
-            </a>
-          </li>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContenet: "center",
+          }}
+        >
+          <a className="nav-link" href="#">
+            <i
+              className="bi-twitter"
+              style={{ color: "white", fontSize: "20px" }}
+            ></i>
+          </a>
 
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              <i
-                className="bi-facebook"
-                style={{ color: "white", fontSize: "20px" }}
-              ></i>
-            </a>
-          </li>
+          <a className="nav-link" href="#">
+            <i
+              className="bi-facebook"
+              style={{ color: "white", fontSize: "20px" }}
+            ></i>
+          </a>
 
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              <i
-                className="bi-instagram"
-                style={{ color: "white", fontSize: "20px" }}
-              ></i>
-            </a>
-          </li>
+          <a className="nav-link" href="#">
+            <i
+              className="bi-instagram"
+              style={{ color: "white", fontSize: "20px" }}
+            ></i>
+          </a>
         </div>
       </div>
     </nav>

@@ -3,9 +3,17 @@ import React from "react";
 export const Tours = () => {
   return (
     <div>
-      <h1 className={"text-center"} style={{ backgroundColor: "#e3ff00" }}>Tours</h1>
+      <h1
+        className={"text-center container"}
+        style={{ backgroundColor: "#e3ff00" }}
+      >
+        Tours
+      </h1>
       <hr style={{ color: "#e3ff00" }} />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{ display: "flex", justifyContent: "space-around" }}
+        className={"text-center container"}
+      >
         <div
           style={{
             color: "whitesmoke",
@@ -18,10 +26,10 @@ export const Tours = () => {
           <br />
           15 2022
         </div>
-        <div>
+        <div className={"w-100"}>
           <p style={{ color: "#dfff00" }}>Tour 1</p>
         </div>
-        <div>
+        <div className={""}>
           <button className={"btn btn-dark border border-success border-3"}>
             INFO
           </button>
@@ -31,7 +39,10 @@ export const Tours = () => {
         </div>
       </div>
       <hr style={{ color: "#e3ff00" }} />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{ display: "flex", justifyContent: "space-around" }}
+        className={"text-center container"}
+      >
         <div
           style={{
             color: "whitesmoke",
@@ -44,7 +55,7 @@ export const Tours = () => {
           <br />
           14 2022
         </div>
-        <div>
+        <div className={"w-100"}>
           <p style={{ color: "#dfff00" }}>Tour 2</p>
         </div>
         <div>
@@ -57,7 +68,10 @@ export const Tours = () => {
         </div>
       </div>
       <hr style={{ color: "#e3ff00" }} />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{ display: "flex", justifyContent: "space-around" }}
+        className={"text-center container"}
+      >
         <div
           style={{
             color: "whitesmoke",
@@ -70,7 +84,7 @@ export const Tours = () => {
           <br />
           10 2022
         </div>
-        <div>
+        <div className={"w-100"}>
           <p style={{ color: "#dfff00" }}>Tour 3</p>
         </div>
         <div>
@@ -83,7 +97,10 @@ export const Tours = () => {
         </div>
       </div>
       <hr style={{ color: "#e3ff00" }} />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{ display: "flex", justifyContent: "space-around" }}
+        className={"text-center container"}
+      >
         <div
           style={{
             color: "whitesmoke",
@@ -96,7 +113,7 @@ export const Tours = () => {
           <br />
           24 2022
         </div>
-        <div>
+        <div className={"w-100"}>
           <p style={{ color: "#dfff00" }}>Tour 4</p>
         </div>
         <div>

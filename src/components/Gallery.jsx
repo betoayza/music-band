@@ -5,8 +5,8 @@ import image3 from "../img/Gallery/gallery-3.jpg";
 
 export const Gallery = () => {
   return (
-    <div className={"w-100 container"}>
-      <h1>Gallery</h1>
+    <div className={"w-100 container text-center"}>
+      <h1 style={{ color: "white" }}>Gallery</h1>
       <div className={"row row-cols-auto"}>
         <div className={""}>
           <figure>
@@ -42,7 +42,9 @@ export const Gallery = () => {
               alt="Album"
               // style={{ width: "200px", height: "200px" }}
             />
-            <figcaption style={{ color: "#adff2f" }} className={"text-center"}>Photo 3</figcaption>
+            <figcaption style={{ color: "#adff2f" }} className={"text-center"}>
+              Photo 3
+            </figcaption>
           </figure>
         </div>
       </div>
