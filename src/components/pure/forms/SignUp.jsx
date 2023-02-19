@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Modal } from "./Modal";
+import { Modal } from "../Modal";
 
 const initialForm = {
   code: Date.now(),

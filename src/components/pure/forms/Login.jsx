@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Modal } from "./Modal";
+import { Modal } from "../Modal";
 
 const initialForm = {
   data: "",

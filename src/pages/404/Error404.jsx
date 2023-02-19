@@ -5,7 +5,10 @@ export const Error404 = () => {
   let navigate = useNavigate();
 
   return (
-    <div>
+    <div
+      className={"text-center"}
+      style={{ display: "grid", placeItems: "center" }}
+    >
       <h1 style={{ color: "#adff2f" }}>Error 404: resource not founded</h1>
       <button className={"btn btn-dark"} onClick={() => navigate(-1)}>
         Volver

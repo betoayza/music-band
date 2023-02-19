@@ -1,7 +1,7 @@
 import React from "react";
-import imageDrum from "../img/Albums/drum.jpg";
-import imageMicro from "../img/Albums/micro.jpg";
-import imageElectronic from "../img/Albums/electronic.jpg";
+import imageDrum from "../../img/Albums/drum.jpg";
+import imageMicro from "../../img/Albums/micro.jpg";
+import imageElectronic from "../../img/Albums/electronic.jpg";
 import { NavLink } from "react-router-dom";
 
 export const SliderAlbums = () => {
@@ -42,7 +42,11 @@ export const SliderAlbums = () => {
                 className={isActive ? "nav-link" : "nav-link"}
                 style={{ color: "#e3ff00" }}
               >
-                <img src={imageDrum} className="d-block w-100 rounded" alt="Drum" />
+                <img
+                  src={imageDrum}
+                  className="d-block w-100 rounded"
+                  alt="Drum"
+                />
               </a>
             )}
           </NavLink>
@@ -86,7 +90,11 @@ export const SliderAlbums = () => {
                 className={isActive ? "nav-link" : "nav-link"}
                 style={{ color: "#e3ff00" }}
               >
-                <img src={imageMicro} className="d-block w-100 rounded" alt="Micro" />
+                <img
+                  src={imageMicro}
+                  className="d-block w-100 rounded"
+                  alt="Micro"
+                />
               </a>
             )}
           </NavLink>

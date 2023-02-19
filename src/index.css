@@ -5,3 +5,7 @@ body {
   background-size: cover; */
   background-color: black;
 }
+
+input {
+  margin: 2px;
+}

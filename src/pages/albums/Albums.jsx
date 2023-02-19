@@ -1,7 +1,7 @@
 import React from "react";
-import imageDrum from "../img/Albums/drum.jpg";
-import imageMicro from "../img/Albums/micro.jpg";
-import imageElectronic from "../img/Albums/electronic.jpg";
+import imageDrum from "../../img/Albums/drum.jpg";
+import imageMicro from "../../img/Albums/micro.jpg";
+import imageElectronic from "../../img/Albums/electronic.jpg";
 
 export const Albums = () => {
   return (

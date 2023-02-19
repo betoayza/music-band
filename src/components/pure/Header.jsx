@@ -8,9 +8,6 @@ export const Header = () => {
       style={{ display: "flex", justifyContent: "space-between" }}
     >
       <div className="container-fluid">
-        {/* <a className="navbar-brand" href="#"> */}
-        {/* <img src={""} style={{ width: 50, height: 50 }} alt="Logo" /> */}
-        {/* </a> */}
         <button
           className="navbar-toggler"
           type="button"

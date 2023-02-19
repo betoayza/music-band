@@ -1,7 +1,6 @@
 import React from "react";
-import { SliderAlbums } from "./SliderAlbums";
-import { SliderPresentation } from "./SliderPresentation";
-import concertImage from "../img/concert.jpg";
+import { SliderAlbums } from "../../components/pure/SliderAlbums";
+import concertImage from "../../img/concert.jpg";
 
 export const Home = () => {
   return (

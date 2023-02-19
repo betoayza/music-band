@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../img/Gallery/gallery-1.jpg";
-import image2 from "../img/Gallery/gallery-2.jpg";
-import image3 from "../img/Gallery/gallery-3.jpg";
+import image1 from "../../img/Gallery/gallery-1.jpg";
+import image2 from "../../img/Gallery/gallery-2.jpg";
+import image3 from "../../img/Gallery/gallery-3.jpg";
 
 export const Gallery = () => {
   return (

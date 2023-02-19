@@ -1,9 +1,9 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import React from "react";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Header } from "./components/pure/Header";
+import { Footer } from "./components/pure/Footer";
 import { Route, Routes } from "react-router-dom";
-import * as Components from "./components/indexComponents";
+import * as Components from "./index/indexComponents";
 
 function App() {
   return (
